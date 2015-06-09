@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+body {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.editor {
+	width: 100%;
+	height: 300px
+}
+
+.lt-grammar {
+	background-color: #fee481;
+	cursor: pointer;
+}
+
+.lt-typo {
+	background-color: rgba(255, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+#popUp {
+	position: absolute;
+	border: 2px solid;
+}
+
+.errMsg {
+	font: bold;
+	background-color: grey;
+}
+
+.opt-replace-suggest {
+	cursor: pointer;
+}
+
+.opt-ignore {
+	cursor: pointer;
+}
+
+.opt-replace-suggest:hover {
+	background-color: aqua;
+}
+
+.opt-ignore:hover {
+	background-color: aqua;
+}
