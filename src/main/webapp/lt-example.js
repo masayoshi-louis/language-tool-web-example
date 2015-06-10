@@ -84,10 +84,7 @@ function onBtnClick() {
 						$(thisErr.replacements).each(procReplacement);
 						var ignoreDiv = $('<div class="opt-ignore"></div>');
 						ignoreDiv.text('Ignore');
-						ignoreDiv.click(function() {
-							errSpan.removeClass(errCls);
-							solved();
-						});
+						ignoreDiv.click(solved);
 						popup.append(ignoreDiv);
 						popup.show();
 						popup[0].style.removeProperty('top');
