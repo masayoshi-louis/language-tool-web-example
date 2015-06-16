@@ -57,7 +57,7 @@ function onBtnClick() {
 						: 'lt-typo';
 				errSpan.addClass(errCls);
 				errSpan.text(text.substring(thisErr.fromX, thisErr.toX));
-				var solved = function(){
+				var solved = function() {
 					errSpan.removeClass(errCls);
 					errSpan.off('click');
 					hidePopup();
@@ -101,7 +101,9 @@ function onBtnClick() {
 						else
 							popup[0].style.left = spanBcr.right
 									- popup[0].offsetWidth + 'px';
-						popup[0].style.top = spanBcr.bottom + 1 + 'px';
+						var bodyOffset = -document.body.getBoundingClientRect().top;
+						popup[0].style.top = bodyOffset + spanBcr.bottom + 1
+								+ 'px';
 					}
 				};
 				errSpan.click(onSpanClick);
